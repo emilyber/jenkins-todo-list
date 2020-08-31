@@ -49,6 +49,7 @@ pipeline {
                         timeout(time: 10, unit: 'MINUTES') {
                             input(id: "Deploy Gate", message: "Deploy em produção?", ok: 'Deploy')
                         
+                        
                         }
                     }
                 }
