@@ -48,6 +48,7 @@ pipeline {
                         slackSend (color: 'warning', message: "Para aplicar a mudança em produção, acesse [Janela de 10 minutos]: ${JOB_URL}", tokenCredentialId: 'slack-token')
                         timeout(time: 10, unit: 'MINUTES') {
                             input(id: "Deploy Gate", message: "Deploy em produção?", ok: 'Deploy')
+                        
                         }
                     }
                 }
