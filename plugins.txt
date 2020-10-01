@@ -1,1 +1,2 @@
 warnings-ng:8.4.1
+credentials-binding:1.23
