@@ -13,7 +13,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 # Expondo a porta da APP
 EXPOSE 8000
-# Executando o comando para subir a aplicacao
+# Executando o comando para subir a aplicacao.
 CMD ["gunicorn", "to_do.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3"]
 
 ##salesforce DX 
