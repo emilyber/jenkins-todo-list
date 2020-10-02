@@ -37,8 +37,4 @@ RUN apt-get autoremove --assume-yes \
   && apt-get clean --assume-yes \
   && rm -rf /var/lib/apt/lists/*
 
-ENV PATH=/usr/local/lib/nodejs/bin:$PATH
-ENV SFDX_CONTAINER_MODE true
-ENV DEBIAN_FRONTEND=dialog
-ENV SHELL /bin/bash
 
